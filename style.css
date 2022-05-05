@@ -1,0 +1,49 @@
+body{
+    background-color: rgb(27, 119, 88);
+}
+.container{
+    
+    color: rgb(25, 255, 178);
+    width: 750px;
+    height: 720px;
+    position: absolute;
+    border: 1px solid black;
+    top: 0%;
+    right:0%;
+}
+.button-social{
+    cursor: pointer;
+    width: 250px;
+    height: 60px;
+    background-color:rgb(16, 190, 132);
+    left: 10px;
+    border-radius: 50px;
+    position: absolute;
+    box-shadow: 1px 1px ;
+    
+
+  /*   box-shadow: 3px 3px rgb(78, 78, 78);
+    left: 10px;
+    box-shadow: 10px;
+    border: none;
+    background-color:rgb(76, 240, 185) ;
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    border-radius: 50px; */
+}
+#google_logo{
+    position: relative;
+    right: 100px;
+    top: 12px;
+    width: 30px;
+}
+.button-social p{
+    bottom: 42px;
+    left: 15px;
+    position: relative;
+    color: rgb(27, 119, 88);
+    font-weight:bold;
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
