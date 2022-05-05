@@ -1,27 +1,50 @@
 body{
-    background-color: rgb(27, 119, 88);
+    background-color: rgb(41, 43, 65);
 }
 .container{
     
-    color: rgb(25, 255, 178);
-    width: 750px;
-    height: 720px;
+    color: rgb(155, 162, 247);
+    width: 50%;
+    height: 100%;
     position: absolute;
     border: 1px solid black;
     top: 0%;
     right:0%;
 }
-.button-social{
+
+.button-google{
     cursor: pointer;
     width: 250px;
     height: 60px;
-    background-color:rgb(16, 190, 132);
-    left: 10px;
+    background-color:rgb(155, 162, 247);
+    top: 25%;
+    left: 2%;
     border-radius: 50px;
     position: absolute;
-    box-shadow: 1px 1px ;
-    
-
+    box-shadow: 1px 1px;
+}
+.button-twitter{
+    cursor: pointer;
+    width: 250px;
+    height: 60px;
+    background-color:rgb(155, 162, 247);
+    top: 25%;
+    left: 295px;
+    border-radius: 50px;
+    position: absolute;
+    box-shadow: 1px 1px ;    
+}
+.button-facebook{
+    cursor: pointer;
+    width: 250px;
+    height: 60px;
+    background-color:rgb(155, 162, 247);
+    top: 25%;
+    left: 575px;
+    border-radius: 50px;
+    position: absolute;
+    box-shadow: 1px 1px ;    
+}
   /*   box-shadow: 3px 3px rgb(78, 78, 78);
     left: 10px;
     box-shadow: 10px;
@@ -31,19 +54,25 @@ body{
     width: 250px;
     height: 50px;
     border-radius: 50px; */
-}
+
 #google_logo{
     position: relative;
     right: 100px;
     top: 12px;
     width: 30px;
 }
-.button-social p{
+#twitter_logo{
+    position: relative;
+    right:0px;
+    width: 42px;
+    top: 1px;
+}
+.button-google p{
     bottom: 42px;
     left: 15px;
     position: relative;
-    color: rgb(27, 119, 88);
+    color: rgb(41, 43, 65);
     font-weight:bold;
-    font-size: 22px;
+    font-size: 23px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
