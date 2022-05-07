@@ -1,5 +1,6 @@
 body{
-    background-color: rgb(41, 43, 65);
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #292b41;
 }
 picture{
     position: absolute;
@@ -70,7 +71,7 @@ h2{
     cursor: pointer;
     width: calc(33.3333% - 20px);
     height: 60px;
-    background-color:rgb(155, 162, 247);
+    background-color:#9ba2f7;
     top: 30%;
     left: calc(34.3%);
     border-radius: 50px;
@@ -88,16 +89,6 @@ h2{
     position: absolute;
     box-shadow: 1px 1px ;    
 }
-  /*   box-shadow: 3px 3px rgb(78, 78, 78);
-    left: 10px;
-    box-shadow: 10px;
-    border: none;
-    background-color:rgb(76, 240, 185) ;
-    position: absolute;
-    width: 250px;
-    height: 50px;
-    border-radius: 50px; */
-
 #google_logo{
     position: relative;
     right: 100px;
@@ -124,3 +115,154 @@ h2{
     font-size: 23px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+.linha-horizontal1{
+    position: absolute;
+    top: 45%;
+    left: 3%;
+    width: 500px;
+    border: 4px solid #9ba2f7;
+    border-radius: 100%;
+}
+.line p{
+    font-size: 35px;
+    top: 43%;
+    left: 49%;
+   position: absolute;
+}
+.linha-horizontal2{
+    position: absolute;
+    top: 45%;
+    left: 57%;
+    width: 500px;
+    border: 4px solid #9ba2f7;
+    border-radius: 100%;
+}
+
+#cadastro-nome{
+    font-size: 30px;
+    width: calc(33.3333% - 20px);
+    height: 60px;
+    background-color:rgb(155, 162, 247);
+    top: 57%;
+    left: 8%;
+    border-radius: 50px;
+    position: absolute;
+    box-shadow: 1px 1px;
+    padding: 0px 2% 0px;
+}
+.label1{
+    font-size: 30px;
+    width: calc(33.3333% - 20px);
+    height: 60px;
+    top: 54%;
+    left: 10%;
+    position: absolute;
+}
+#email{
+    font-size: 30px;
+    width: calc(33.3333% - 20px);
+    height: 60px;
+    background-color:rgb(155, 162, 247);
+    top: 57%;
+    left: 57%;
+    border-radius: 50px;
+    position: absolute;
+    box-shadow: 1px 1px;
+    padding: 0px 2% 0px;
+}
+.label2{
+    font-size: 30px;
+    width: calc(33.3333% - 20px);
+    height: 60px;
+    top: 54%;
+    left: 59%;
+    position: absolute;
+}
+#password{
+    font-size: 30px;
+    width: calc(33.3333% - 20px);
+    height: 60px;
+    background-color:rgb(155, 162, 247);
+    top: 72%;
+    left: 8%;
+    border-radius: 50px;
+    position: absolute;
+    box-shadow: 1px 1px;
+    padding: 0px 2% 0px;
+}
+.label3{
+    font-size: 30px;
+    width: calc(33.3333% - 20px);
+    height: 60px;
+    top: 69%;
+    left: 10%;
+    position: absolute;
+}
+#confirm-password{
+    display: block;
+    font-size: 30px;
+    width: calc(33.3333% - 20px);
+    height: 60px;
+    background-color:#9ba2f7;
+    top: 72%;
+    left: 57%;
+    border-radius: 50px;
+    position: absolute;
+    box-shadow: 1px 1px;
+    padding: 0px 2% 0px;
+}
+.label4{
+    font-size: 30px;
+    width: calc(33.3333% - 20px);
+    height: 60px;
+    top: 69%;
+    left: 59%;
+    position: absolute;
+}
+#termos-servicos{
+    top: 800px;
+}
+.button{
+    z-index: 1000;
+    position: relative;
+    margin-left: 78%;
+    margin-top: -5%;
+    width: 200px;
+    height: 70px;
+    border-radius: 45px;
+    font-size: 1.2rem;
+    font-weight: 900;
+    background: #292b41;
+    color: #fff;
+    border: 1px solid;
+    transition: all .7s;
+    border: 4px solid lightblue;
+    transition-delay: 0.2s;
+    cursor: pointer;
+}
+.button:hover{
+    box-shadow: 0 0 20px #946dff, 0 0 40px #b194ff;
+    border:  4px solid #946dff;
+    background: #9ba2f7;
+    color: #292b41;
+    transition: box-shadow 1s, border 3s, background 1s, color 1s;
+}
+#check-termos{
+    border: 4px solid #946dff;
+    margin-top:-18px;
+    border: #946dff;
+    display: inline-block;
+    margin-left: -610px;
+}
+.label-termos{
+    display: flex;
+    margin-top: 65%;
+    font-size: 30px;
+    display: inline-block;
+    margin-left: 100px;
+}
+.label-termos a{
+    color: #8f66ff;
+}
+
