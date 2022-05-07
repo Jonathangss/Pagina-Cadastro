@@ -1,46 +1,89 @@
 body{
     background-color: rgb(41, 43, 65);
 }
+picture{
+    position: absolute;
+    margin: 10% 10%;
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    Left: 47%;
+    width: 100px;
+    height: 150%;
+    background: url(img/wave.png);
+    background-size: 100px 1000px;
+}
+
+section .wave.wave1
+{
+   animation: animate 30s linear infinite;
+}
+@keyframes animate
+{
+    0%
+    {
+        background-position-x: 0;
+    }
+    100%
+    {
+       background-position-y: 1000px;
+    }
+}
 .container{
-    
     color: rgb(155, 162, 247);
     width: 50%;
     height: 100%;
     position: absolute;
-    border: 1px solid black;
     top: 0%;
     right:0%;
 }
 
+h1{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    top: 5%;
+    left: 2%;
+    position: absolute;
+    font-size: 50px;
+}
+h2{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    left: 2%;
+    top: 13%;
+    position: absolute;
+    font-size: 48px;
+}
 .button-google{
+    
     cursor: pointer;
-    width: 250px;
+    width: calc(33.3333% - 20px);
     height: 60px;
     background-color:rgb(155, 162, 247);
-    top: 25%;
+    top: 30%;
     left: 2%;
     border-radius: 50px;
     position: absolute;
     box-shadow: 1px 1px;
 }
 .button-twitter{
+    
     cursor: pointer;
-    width: 250px;
+    width: calc(33.3333% - 20px);
     height: 60px;
     background-color:rgb(155, 162, 247);
-    top: 25%;
-    left: 295px;
+    top: 30%;
+    left: calc(34.3%);
     border-radius: 50px;
     position: absolute;
     box-shadow: 1px 1px ;    
 }
 .button-facebook{
     cursor: pointer;
-    width: 250px;
+    width: calc(33.3333% - 20px);
     height: 60px;
     background-color:rgb(155, 162, 247);
-    top: 25%;
-    left: 575px;
+    top: 30%;
+    left: calc(66.66%);
     border-radius: 50px;
     position: absolute;
     box-shadow: 1px 1px ;    
@@ -58,18 +101,23 @@ body{
 #google_logo{
     position: relative;
     right: 100px;
-    top: 12px;
-    width: 30px;
+    top: 10%;
+    width: 42px;
 }
 #twitter_logo{
     position: relative;
     right:0px;
-    width: 42px;
+    width: 45px;
     top: 1px;
 }
+#facebook_logo{
+    position: relative;
+    right:0%;
+    width: 45px;
+}
 .button-google p{
-    bottom: 42px;
-    left: 15px;
+    bottom: 59%;
+    left: 7%;
     position: relative;
     color: rgb(41, 43, 65);
     font-weight:bold;
