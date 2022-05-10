@@ -2,9 +2,49 @@ body{
      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #292b41;
 }
-picture{
+.astronaut{
+
     position: absolute;
-    margin: 10% 10%;
+    top: 18%;
+    Left: 6%;
+    width: 720px;
+    height: 720px;
+    background: url(img/astronaut.png) repeat center;
+    background-size: 720px 720px;
+    animation-name: anima;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    transition-timing-function: cubic-bezier(.15,.89,.85,.26);
+
+}
+
+picture .astronaut .astro
+{
+   animation: anima 10s linear infinite;
+}
+
+@keyframes anima
+{
+    0%
+    {
+        transform:translateY(200px);
+    }
+    25%
+    {
+        transform:translateY(20px);
+     }
+    50%
+    {
+       transform:translateY(20px);
+    }
+    80%
+    {
+       transform:translateX(20px);
+    }
+    100%
+    {
+        transform:translateX(-20px);
+     }
 }
 .wave{
     position: absolute;
@@ -15,7 +55,6 @@ picture{
     background: url(img/wave.png);
     background-size: 100px 1000px;
 }
-
 section .wave.wave1
 {
    animation: animate 30s linear infinite;
