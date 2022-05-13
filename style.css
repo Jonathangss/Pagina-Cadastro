@@ -2,62 +2,82 @@ body{
      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #292b41;
 }
-.astronaut{
-
-    position: absolute;
-    top: 18%;
-    Left: 6%;
-    width: 720px;
-    height: 720px;
-    background: url(img/astronaut.png) repeat center;
-    background-size: 720px 720px;
-    animation-name: anima;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    transition-timing-function: cubic-bezier(.15,.89,.85,.26);
-
-}
-
-picture .astronaut .astro
-{
-   animation: anima 10s linear infinite;
-}
-
-@keyframes anima
-{
-    0%
-    {
-        transform:translateY(200px);
+picture .astronaut{
+    
+        position: absolute;
+        margin-top: 5%;
+        Left: 6%;
+        width: 720px;
+        height: 720px;
+        background: url(img/astronaut.png) repeat center;
+        background-size: 720px 720px;
+        animation-name: anima;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        transition-timing-function: cubic-bezier(.15,.89,.85,.26);
     }
-    25%
+    
+    picture .astronaut .astro
     {
-        transform:translateY(20px);
-     }
-    50%
-    {
-       transform:translateY(20px);
+       animation: anima 60s alternate infinite;
     }
-    80%
+    
+    @keyframes anima
     {
-       transform:translateX(20px);
+        0%
+        {
+            transform:translateY(120px);
+        }
+        25% {
+            transform:translateX(-120px)
+        }
+        50% {
+            transform:translateY(-120px)
+        }
+        75% {
+            transform:translateX(120px)
+        }
+        100% {
+            transform:translateY(120px)
+        }
     }
-    100%
-    {
-        transform:translateX(-20px);
-     }
-}
 .wave{
+    rotate: calc();
     position: absolute;
     bottom: 0;
     Left: 47%;
     width: 100px;
     height: 150%;
-    background: url(img/wave.png);
+    background: url(img/wave2.png) repeat-y;
     background-size: 100px 1000px;
 }
 section .wave.wave1
 {
-   animation: animate 30s linear infinite;
+   animation: animate 20s linear infinite;
+}
+@keyframes animate
+{
+    0%
+    {
+        background-position-x: 0;
+    }
+    100%
+    {
+       background-position-y: 1000px;
+    }
+}
+.wave2{
+    transform:scaleX(-1);
+    bottom: 0;
+    Left: 44%;
+    width: 100px;
+    height: 150%;
+    background: url(img/wave2.png) repeat-y;
+    background-size: 100px 1000px;
+}
+section .wave2
+{
+   animation: animate 10s linear infinite;
 }
 @keyframes animate
 {
@@ -71,7 +91,7 @@ section .wave.wave1
     }
 }
 .container{
-    color: rgb(155, 162, 247);
+    color: #9ba2f7;
     width: 50%;
     height: 100%;
     position: absolute;
@@ -98,7 +118,7 @@ h2{
     cursor: pointer;
     width: calc(33.3333% - 20px);
     height: 60px;
-    background-color:rgb(155, 162, 247);
+    background-color:#9ba2f7;
     top: 30%;
     left: 2%;
     border-radius: 50px;
@@ -163,7 +183,7 @@ h2{
     border: 4px solid #9ba2f7;
     border-radius: 100%;
 }
-.line p{
+.line span{
     font-size: 35px;
     top: 43%;
     left: 49%;
@@ -259,21 +279,24 @@ h2{
     left: 59%;
     position: absolute;
 }
+
+.testelog{
+    display: flex;
+    align-items: center;
+}
+
 #termos-servicos{
     top: 800px;
 }
 .button{
-    z-index: 1000;
-    position: relative;
-    margin-left: 78%;
-    margin-top: -5%;
+   flex:1;
     width: 200px;
     height: 70px;
     border-radius: 45px;
     font-size: 1.2rem;
     font-weight: 900;
     background: #292b41;
-    color: #fff;
+    color: #9ba2f7;
     border: 1px solid;
     transition: all .7s;
     border: 4px solid lightblue;
@@ -292,16 +315,32 @@ h2{
     margin-top:-18px;
     border: #946dff;
     display: inline-block;
-    margin-left: -610px;
+    margin-left: -525px;
 }
 .label-termos{
-    display: flex;
-    margin-top: 65%;
-    font-size: 30px;
+    flex:1;
+    margin-top: 62%;
+    font-size: 25px;
     display: inline-block;
-    margin-left: 100px;
+    margin-left: 150px;
 }
 .label-termos a{
     color: #8f66ff;
 }
-
+.button {
+    z-index: 1000;
+    margin-left: 78%;
+    margin-top: -50%;
+    width: 200px;
+    height: 70px;
+    border-radius: 45px;
+    font-size: 1.2rem;
+    font-weight: 900;
+    background: #292b41;
+    color: #9ba2f7;
+    border: 1px solid;
+    transition: all .7s;
+    border: 4px solid lightblue;
+    transition-delay: 0.2s;
+    cursor: pointer;
+}
